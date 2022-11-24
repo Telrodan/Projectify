@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+  &__card {
+    width: 22%;
+    padding: 3rem;
+    background-color: rgba($color-sky, 0.2);
+    text-align: center;
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.5);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__image {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: $color-milk;
+  }
+
+  &__heading-tertiary {
+    margin-bottom: 0.5rem;
+    color: $color-milk;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: $default-font-size;
+  }
+}

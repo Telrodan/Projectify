@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- UUID uuidv4() -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js" defer></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a3027ea2cf.js" crossorigin="anonymous" defer></script>
+  <!-- Landing Page JS -->
+  <script type="module" src="src/js/pages/landing.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Welcome | Projectify</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="navigation">
+    <div class="navigation__logo-box">
+      <i class="fa-solid fa-layer-group fa-3x navigation__logo"></i>
+      <p class="navigation__logo-text">Projectify</p>
+    </div>
+    <nav class="navigation__nav">
+      <a href="#loginPopup" class="button button--white navigation__link toggle-overflow">Login</a>
+      <a href="#registerPopup" class="button button--white navigation__link toggle-overflow">Register</a>
+    </nav>
+  </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary header__heading-primary">Manage Your Projects</h1>
+      <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, consequatur.</p>
+      <a href="#registerPopup" class="button button--white toggle-overflow">Get started</a>
+    </div>
+  </header>
+  <main>
+    <!-- Features Section -->
+    <section class="section-features">
+      <div class="features">
+        <div class="features__card card">
+          <i class="fa-solid fa-message features__image"></i>
+          <h3 class="heading-tertiary features__heading-tertiary">Messages</h3>
+          <p class="features__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, obcaecati?</p>
+        </div>
+        <div class="features__card card">
+          <i class="fa-solid fa-clipboard-list features__image"></i>
+          <h3 class="heading-tertiary features__heading-tertiary">Task List</h3>
+          <p class="features__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, accusamus.</p>
+        </div>
+        <div class="features__card card">
+          <i class="fa-solid fa-bars-progress features__image"></i>
+          <h3 class="heading-tertiary features__heading-tertiary">Team Projects</h3>
+          <p class="features__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, dignissimos?</p>
+        </div>
+        <div class="features__card card">
+          <i class="fa-brands fa-btc features__image"></i>
+          <h3 class="heading-tertiary features__heading-tertiary">Crypto</h3>
+          <p class="features__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section -->
+    <section class="section-subscribe">
+      <div class="subscribe">
+        <form action="#" class="subscribe__form form card">
+          <h2 class="heading-secondary subscribe__heading-secondary">Subscribe</h2>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Full name" id="nameInput">
+            <label for="nameInput" class="form__label">Full name</label>
+          </div>
+          <div class="form__group">
+            <input type="email" class="form__input" placeholder="Email adress" id="emailInput">
+            <label for="emailInput" class="form__label">Email address</label>
+          </div>
+          <div class="form__group">
+            <button class="button button--blue">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Plans Section -->
+    <section class="section-plans">
+      <div class="plans">
+        <div class="plans__card card">
+          <i class="fa-solid fa-user plans__image"></i>
+          <h3 class="heading-tertiary">Private</h3>
+          <p class="plans__license">2 License</p>
+          <ul class="plans__list">
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <p class="plans__price">$ 6.99 <span class="plans__price-span">/ month</span></p>
+          <a href="" class="button button--blue">Join</a>
+        </div>
+        <div class="plans__card card">
+          <i class="fa-solid fa-user-group plans__image"></i>
+          <h3 class="heading-tertiary">Business</h3>
+          <p class="plans__license">5 License</p>
+          <ul class="plans__list">
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <p class="plans__price">$ 9.99 <span class="plans__price-span">/ month</span></p>
+          <a href="" class="button button--blue">Join</a>
+        </div>
+        <div class="plans__card card">
+          <i class="fa-solid fa-users plans__image"></i>
+          <h3 class="heading-tertiary">Corporate</h3>
+          <p class="plans__license">20 License</p>
+          <ul class="plans__list">
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+            <li class="plans__item">Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <p class="plans__price">$ 19.99 <span class="plans__price-span">/ month</span></p>
+          <a href="" class="button button--blue">Join</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer  -->
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <i class="fa-solid fa-layer-group fa-3x footer__logo"></i>
+      <p class="footer__logo-text">Projectify</p>
+    </div>
+    <div class="footer__text-box">
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; Bence Keresztes-Nagy</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Login Popup -->
+  <div class="login" id="loginPopup">
+    <a href="#" class="login__close toggle-overflow">&times;</a>
+    <form action="#" class="login__form form card" id="loginForm">
+      <h2 class="login__heading-secondary heading-secondary">Login</h2>
+      <div class="form__message" id="loginFormMessage"></div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid email adress</p>
+        <input type="email" class="form__input login__input" id="loginInput" name="email" placeholder="Email adress">
+        <label for="loginInput" class="form__label">Email adress</label>
+      </div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid password</p>
+        <input type="password" class="form__input login__input" id="loginPassword" name="password"
+          placeholder="Password">
+        <label for="loginPassword" class="form__label">Password</label>
+      </div>
+      <div class="form__group">
+        <button class="button button--blue">Login</button>
+      </div>
+      <a href="#registerPopup" class="form__link">Don't have an account? Register!</a>
+    </form>
+  </div>
+  <!-- Register Popup -->
+  <div class="register" id="registerPopup">
+    <a href="#" class="register__close toggle-overflow">&times;</a>
+    <form action="#" class="register__form form card" id="registerForm">
+      <h2 class="register__heading-secondary heading-secondary">Register</h2>
+      <div class="form__message" id="registerFormMessage">Succesfull registration, please login.</div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid username. Min 5 characters, only letters and numbers.</p>
+        <input type="text" class="form__input register__input" id="registerUsername" name="username"
+          placeholder="Username">
+        <label for="registerInput" class="form__label">Username</label>
+      </div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid email adress</p>
+        <input type="email" class="form__input register__input" id="registerEmail" name="email"
+          placeholder="Email adress">
+        <label for="registerEmail" class="form__label">Email adress</label>
+      </div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid phone number. Correct format: +12 3456789</p>
+        <input type="text" class="form__input register__input" id="registerPhoneNumber" name="phoneNumber"
+          placeholder="Phone number">
+        <label for="registerPhoneNumber" class="form__label">Phone number</label>
+      </div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Invalid password. Min 8 characters, include 1 letter and 1 number.
+        </p>
+        <input type="password" class="form__input register__input" id="registerPassword" name="password"
+          placeholder="Password">
+        <label for="registerPassword" class="form__label">Password</label>
+      </div>
+      <div class="form__group">
+        <p class="form__input-invalid-message">Password doesn't match</p>
+        <input type="password" class="form__input register__input" id="registerConfirmPassword" name="confirmPassword"
+          placeholder="Confirm password">
+        <label for="registerConfirmPassword" class="form__label">Confirm password</label>
+      </div>
+      <div class="register__form-checkbox form__group-checkbox">
+        <input type="checkbox" class="form__input-checkbox" id="subscribe">
+        <label for="subscribe" class="form__label-checkbox"><span class="form__radio-button"></span>Subscribe</label>
+      </div>
+      <div class="form__group">
+        <button class="button button--blue">register</button>
+      </div>
+      <a href="#loginPopup" class="form__link">Already have an account? Login!</a>
+    </form>
+  </div>
+</body>
+
+</html>

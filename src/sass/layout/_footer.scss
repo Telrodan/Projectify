@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  padding: 4rem;
+  color: $color-milk;
+  background-color: $color-grey-dark-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__logo-box {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 1.5rem;
+
+    &-text {
+      font-family: 'Oleo Script Swash Caps', cursive;
+      font-size: 4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: rgba($color-white, 0.5);
+    }
+  }
+
+  &__copyright {
+    font-size: $default-font-size;
+  }
+}

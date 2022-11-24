@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+
+  &__card {
+    width: 25%;
+    padding: 3rem 2rem;
+    background-color: rgba($color-milk, 0.9);
+    text-align: center;
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__image {
+    margin-bottom: 0.5rem;
+    color: $color-blue-3;
+    font-size: 5rem;
+  }
+
+  &__license {
+    padding-bottom: 1rem;
+    margin-top: -0.5rem;
+    color: $color-blue-4;
+    font-size: $default-font-size;
+    font-weight: 500;
+    border-bottom: 1px solid;
+  }
+
+  &__list {
+    margin: 3rem 0;
+  }
+
+  &__item {
+    color: $color-cobalt;
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__price {
+    margin-bottom: 3rem;
+    color: $color-blue-2;
+    font-size: 3rem;
+    font-weight: 600;
+
+    &-span {
+      font-size: $default-font-size;
+      font-weight: 400;
+    }
+  }
+}

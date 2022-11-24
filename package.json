@@ -1,0 +1,18 @@
+{
+  "name": "projectify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch database/database.json --port 3004",
+    "sass": "sass --watch src/sass/main.scss src/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "sass": "^1.51.0",
+    "uuid": "^8.3.2"
+  }
+}

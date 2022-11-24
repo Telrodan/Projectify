@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background-color: $color-cobalt;
+  z-index: 5;
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 1.5rem;
+    color: $color-haze;
+
+    &-text {
+      color: $color-milk;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      font-size: 4rem;
+    }
+  }
+
+  &__nav {
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+}

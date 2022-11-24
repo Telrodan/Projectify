@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+
+.register {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $color-cobalt;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  &__close {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: $color-milk;
+    font-size: 5rem;
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__heading-secondary {
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    text-align: center;
+    width: 30%;
+    padding: 4rem;
+    transform: scale(0.5);
+    transition: all 0.3s 0.1s;
+
+    &-checkbox {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &:target &__form {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

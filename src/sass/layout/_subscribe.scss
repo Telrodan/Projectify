@@ -1,0 +1,14 @@
+.subscribe {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	transform: skewY(3deg);
+
+	&__form {
+		padding: 3rem 4rem;
+	}
+
+	&__heading-secondary {
+		margin-bottom: 3rem;
+	}
+}

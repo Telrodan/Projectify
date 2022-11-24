@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "795b586e-33d6-4784-a907-1915b8a9ef9d",
+      "username": "Tasak",
+      "email": "telrodan@gmail.com",
+      "phone_number": "+30 1234567",
+      "password": "test",
+      "subscribed": true
+    }
+  ]
+}
